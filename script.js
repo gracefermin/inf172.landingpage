@@ -1,26 +1,37 @@
 // Footer year
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // Waitlist form (demo)
-// Hook this up to Google Forms / Mailchimp later.
+// Note: This does NOT save anywhere yet (GitHub Pages is static).
+// Later you can connect it to Google Forms / Mailchimp / ConvertKit.
 const form = document.getElementById("waitlist-form");
 const statusEl = document.getElementById("form-status");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+if (form && statusEl) {
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const role = form.querySelector('input[name="role"]:checked')?.value || "";
-  const concerns = document.getElementById("concerns").value.trim();
+    const name = document.getElementById("name")?.value.trim();
+    const email = document.getElementById("email")?.value.trim();
+    const role = form.querySelector('input[name="role"]:checked')?.value || "";
+    const concerns = document.getElementById("concerns")?.value.trim() || "";
 
-  if (!name || !email || !role) return;
+    if (!name || !email) {
+      statusEl.textContent = "Please enter your name and email.";
+      return;
+    }
 
-  // For now, just show success message
-  statusEl.textContent = `Thanks, ${name}! You’re on the list (${role}).`;
+    if (!role) {
+      statusEl.textContent = "Please select what best describes you (Parent / Teacher / Admin / Other).";
+      return;
+    }
 
-  // Optional: log to console so you can see collected values
-  console.log({ name, email, role, concerns });
+    statusEl.textContent = `Thanks, ${name}! You're on the waitlist (${role}).`;
 
-  form.reset();
-});
+    // Helpful for testing
+    console.log({ name, email, role, concerns });
+
+    form.reset();
+  });
+}
