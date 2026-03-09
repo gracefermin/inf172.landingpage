@@ -21,12 +21,14 @@
 
 *{ box-sizing:border-box; }
 html{ scroll-behavior:smooth; }
+
 body{
   margin:0;
   font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
 }
+
 a{ color:inherit; text-decoration:none; }
 img{ max-width:100%; display:block; }
 
@@ -45,7 +47,7 @@ img{ max-width:100%; display:block; }
   margin-top: 20px;
 }
 
-/* ---------- Header/Nav ---------- */
+/* Header/Nav */
 .site-header{
   position: sticky;
   top: 0;
@@ -54,6 +56,7 @@ img{ max-width:100%; display:block; }
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
+
 .nav{
   height: 76px;
   display:flex;
@@ -61,12 +64,14 @@ img{ max-width:100%; display:block; }
   justify-content:space-between;
   gap: 18px;
 }
+
 .brand{
   display:flex;
   align-items:center;
   gap: 10px;
   font-weight: 700;
 }
+
 .brand-icon{
   width: 38px;
   height: 38px;
@@ -75,6 +80,7 @@ img{ max-width:100%; display:block; }
   place-items:center;
   background: linear-gradient(135deg, var(--purple1), var(--blue1));
 }
+
 .nav-links{
   display:flex;
   align-items:center;
@@ -82,9 +88,10 @@ img{ max-width:100%; display:block; }
   color: var(--muted);
   font-weight: 500;
 }
+
 .nav-links a:hover{ color: var(--text); }
 
-/* ---------- Buttons ---------- */
+/* Buttons */
 .btn{
   display:inline-flex;
   align-items:center;
@@ -97,6 +104,7 @@ img{ max-width:100%; display:block; }
   transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
   user-select:none;
 }
+
 .btn:hover{ transform: translateY(-1px); box-shadow: var(--shadow-soft); }
 .btn:active{ transform: translateY(0); box-shadow:none; }
 
@@ -104,33 +112,40 @@ img{ max-width:100%; display:block; }
   background:#0b0f1a;
   color:white;
 }
+
 .btn-light{
   background:white;
   color: var(--text);
   border-color: var(--border);
 }
+
 .btn-pill{
   border-radius: 999px;
   padding: 12px 16px;
 }
+
 .btn-small{
   padding: 10px 12px;
   border-radius: 12px;
   font-weight: 600;
   font-size: 13px;
 }
+
 .full{ width: 100%; }
 
-/* ---------- Sections ---------- */
+/* Sections */
 .section{
   padding: 84px 0;
 }
+
 .section-white{
   background: var(--white);
 }
+
 .section-soft{
   background: #f7f9ff;
 }
+
 .section-subtitle{
   margin: 10px auto 0;
   max-width: 740px;
@@ -139,7 +154,7 @@ img{ max-width:100%; display:block; }
   line-height: 1.5;
 }
 
-/* ---------- Hero ---------- */
+/* Hero */
 .hero{
   padding: 60px 0 40px;
   background:
@@ -148,12 +163,14 @@ img{ max-width:100%; display:block; }
     radial-gradient(850px 620px at 50% 62%, rgba(34,197,94,.10), transparent 65%),
     var(--bg);
 }
+
 .hero-grid{
   display:grid;
   grid-template-columns: 1.05fr .95fr;
   gap: 34px;
   align-items:center;
 }
+
 .pill{
   display:inline-block;
   padding: 10px 16px;
@@ -163,6 +180,7 @@ img{ max-width:100%; display:block; }
   font-weight: 650;
   font-size: 13px;
 }
+
 .hero h1{
   margin: 18px 0 10px;
   font-size: clamp(38px, 5vw, 56px);
@@ -171,6 +189,7 @@ img{ max-width:100%; display:block; }
   line-height: 1.06;
   max-width: 620px;
 }
+
 .subhead{
   margin: 0 0 22px;
   color: var(--muted);
@@ -178,17 +197,20 @@ img{ max-width:100%; display:block; }
   max-width: 520px;
   line-height: 1.6;
 }
+
 .hero-actions{
   display:flex;
   gap: 12px;
   flex-wrap: wrap;
 }
+
 .hero-img{
   background: white;
   border-radius: 22px;
   box-shadow: var(--shadow);
   padding: 14px;
 }
+
 .hero-img img{
   border-radius: 18px;
   height: 380px;
@@ -196,7 +218,7 @@ img{ max-width:100%; display:block; }
   object-fit: cover;
 }
 
-/* ---------- About Host ---------- */
+/* About Host */
 .host-card{
   margin-top: 40px;
   background: #fff;
@@ -205,9 +227,11 @@ img{ max-width:100%; display:block; }
   box-shadow: var(--shadow);
   overflow: hidden;
 }
+
 .host-photo{
   padding: 26px 26px 0;
 }
+
 .host-photo img{
   border-radius: 18px;
   width: 100%;
@@ -215,26 +239,31 @@ img{ max-width:100%; display:block; }
   object-fit: cover;
   box-shadow: var(--shadow-soft);
 }
+
 .host-body{
   padding: 22px 26px 26px;
 }
+
 .host-body h3{
   margin: 0 0 8px;
   font-size: 22px;
   letter-spacing: -0.02em;
 }
+
 .host-role{
   margin: 0 0 14px;
   font-size: 13px;
   color: #3b4556;
   line-height: 1.55;
 }
+
 .host-text{
   margin: 0 0 12px;
   font-size: 13px;
   color: var(--muted);
   line-height: 1.6;
 }
+
 .host-actions{
   display:flex;
   gap: 10px;
@@ -242,13 +271,14 @@ img{ max-width:100%; display:block; }
   margin-top: 12px;
 }
 
-/* ---------- Credentials grid ---------- */
+/* Credentials */
 .cred-grid{
   margin-top: 26px;
   display:grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 18px;
 }
+
 .cred{
   background: #fff;
   border: 1px solid var(--border);
@@ -259,6 +289,7 @@ img{ max-width:100%; display:block; }
   gap: 12px;
   align-items:flex-start;
 }
+
 .cred-ic{
   width: 36px;
   height: 36px;
@@ -268,6 +299,7 @@ img{ max-width:100%; display:block; }
   background: rgba(47,139,255,.12);
   font-size: 16px;
 }
+
 .cred-label{
   font-size: 11px;
   letter-spacing: .08em;
@@ -275,6 +307,7 @@ img{ max-width:100%; display:block; }
   font-weight: 700;
   margin-bottom: 6px;
 }
+
 .cred-title{
   font-size: 13px;
   line-height: 1.45;
@@ -282,22 +315,25 @@ img{ max-width:100%; display:block; }
   font-weight: 600;
 }
 
-/* ---------- Expertise block ---------- */
+/* Expertise */
 .expertise{
   margin-top: 22px;
   background: #f3f6ff;
   border-radius: 20px;
   padding: 24px;
 }
+
 .expertise h3{
   margin: 0 0 16px;
   font-size: 18px;
 }
+
 .expertise-grid{
   display:grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
 }
+
 .expertise-item{
   background: #fff;
   border: 1px solid rgba(0,0,0,.05);
@@ -310,11 +346,13 @@ img{ max-width:100%; display:block; }
   font-size: 13px;
   line-height: 1.4;
 }
+
 .tick{
   color: #16a34a;
   font-weight: 900;
   margin-top: 1px;
 }
+
 .quote{
   margin: 18px 0 0;
   font-size: 13px;
@@ -322,6 +360,7 @@ img{ max-width:100%; display:block; }
   font-style: italic;
   text-align:center;
 }
+
 .quote-author{
   display:block;
   margin-top: 8px;
@@ -330,19 +369,22 @@ img{ max-width:100%; display:block; }
   font-weight: 600;
 }
 
-/* ---------- Previous Work ---------- */
+/* Previous Work */
 .previous{
   margin-top: 20px;
 }
+
 .previous h3{
   margin: 0 0 12px;
   font-size: 16px;
 }
+
 .previous-grid{
   display:grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
 }
+
 .prev-card{
   background: #fff;
   border: 1px solid rgba(47,139,255,.30);
@@ -350,12 +392,14 @@ img{ max-width:100%; display:block; }
   padding: 16px;
   box-shadow: var(--shadow-soft);
 }
+
 .prev-head{
   display:flex;
   gap: 10px;
   align-items:center;
   margin-bottom: 10px;
 }
+
 .prev-ic{
   width: 32px;
   height: 32px;
@@ -365,17 +409,19 @@ img{ max-width:100%; display:block; }
   background: rgba(47,139,255,.12);
 }
 
-/* ---------- Stats ---------- */
+/* Stats */
 .stats-grid{
   margin-top: 44px;
   display:grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
+
 .stat{
   text-align:center;
   padding: 8px 10px 0;
 }
+
 .icon-circle{
   width: 58px;
   height: 58px;
@@ -384,15 +430,18 @@ img{ max-width:100%; display:block; }
   place-items:center;
   margin: 0 auto 14px;
 }
+
 .icon-blue{ background: rgba(47,139,255,.15); color:#1e5cff; }
 .icon-orange{ background: rgba(255,149,0,.15); color:#ff7a00; }
 .icon-purple{ background: rgba(139,92,246,.15); color:#7c3aed; }
 .icon-green{ background: rgba(34,197,94,.15); color:#16a34a; }
+
 .stat h4{
   margin: 8px 0 6px;
   font-size: 14px;
   font-weight: 700;
 }
+
 .stat p{
   margin: 0;
   color: var(--muted);
@@ -400,13 +449,14 @@ img{ max-width:100%; display:block; }
   line-height: 1.45;
 }
 
-/* ---------- Who It's For Cards ---------- */
+/* Who It's For Cards */
 .cards{
   margin-top: 40px;
   display:grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
 }
+
 .card{
   background: #fff;
   border: 1px solid var(--border);
@@ -414,6 +464,7 @@ img{ max-width:100%; display:block; }
   overflow:hidden;
   box-shadow: var(--shadow);
 }
+
 .card-top{
   padding: 26px 22px 20px;
   color: white;
@@ -422,6 +473,7 @@ img{ max-width:100%; display:block; }
   flex-direction:column;
   gap: 10px;
 }
+
 .top-icon{
   width: 46px;
   height: 46px;
@@ -430,12 +482,14 @@ img{ max-width:100%; display:block; }
   place-items:center;
   background: rgba(255,255,255,.18);
 }
+
 .card-top h3{
   margin: 6px 0 0;
   font-size: 24px;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
+
 .card-top p{
   margin: 0;
   opacity: .94;
@@ -443,6 +497,7 @@ img{ max-width:100%; display:block; }
   line-height: 1.55;
   max-width: 260px;
 }
+
 .top-blue{ background: linear-gradient(135deg, var(--blue1), var(--blue2)); }
 .top-purple{ background: linear-gradient(135deg, var(--purple1), var(--purple2)); }
 .top-green{ background: linear-gradient(135deg, var(--green1), var(--green2)); }
@@ -450,6 +505,7 @@ img{ max-width:100%; display:block; }
 .card-bottom{
   padding: 16px 22px 22px;
 }
+
 .eyebrow{
   font-weight: 700;
   letter-spacing: .09em;
@@ -457,6 +513,7 @@ img{ max-width:100%; display:block; }
   color: #7a8496;
   margin-bottom: 12px;
 }
+
 .checklist{
   list-style:none;
   padding:0;
@@ -465,12 +522,14 @@ img{ max-width:100%; display:block; }
   gap: 12px;
   color:#2b3445;
 }
+
 .checklist li{
   position:relative;
   padding-left: 24px;
   line-height: 1.35;
   font-size: 13px;
 }
+
 .checklist li::before{
   content:"✓";
   position:absolute;
@@ -480,17 +539,19 @@ img{ max-width:100%; display:block; }
   font-weight: 900;
 }
 
-/* ---------- Our Unique Approach ---------- */
+/* Approach */
 .approach-grid{
   margin-top: 34px;
   display:grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 26px;
 }
+
 .approach{
   text-align:center;
   padding: 8px 14px;
 }
+
 .mini-icon{
   width: 44px;
   height: 44px;
@@ -500,14 +561,17 @@ img{ max-width:100%; display:block; }
   margin: 0 auto 12px;
   font-size: 18px;
 }
+
 .mini-yellow{ background: rgba(255,193,7,.18); }
 .mini-blue{ background: rgba(47,139,255,.15); }
 .mini-purple{ background: rgba(139,92,246,.15); }
+
 .approach h4{
   margin: 8px 0 8px;
   font-size: 14px;
   font-weight: 700;
 }
+
 .approach p{
   margin: 0 auto;
   max-width: 320px;
@@ -516,8 +580,9 @@ img{ max-width:100%; display:block; }
   line-height: 1.55;
 }
 
-/* ---------- What Makes Us Different (split) ---------- */
+/* What Makes Us Different */
 .split-wrap{ margin-top: 42px; }
+
 .split-section{
   display:grid;
   grid-template-columns: 1fr 1fr;
@@ -528,11 +593,13 @@ img{ max-width:100%; display:block; }
   border-radius: 24px;
   box-shadow: var(--shadow-soft);
 }
+
 .split-copy h3{
   margin: 0 0 14px;
   font-size: 22px;
   letter-spacing: -0.02em;
 }
+
 .arrow-list{
   list-style:none;
   padding:0;
@@ -541,12 +608,14 @@ img{ max-width:100%; display:block; }
   gap: 12px;
   color:#2b3445;
 }
+
 .arrow-list li{
   position:relative;
   padding-left: 22px;
   font-size: 13px;
   line-height: 1.55;
 }
+
 .arrow-list li::before{
   content:"→";
   position:absolute;
@@ -555,6 +624,7 @@ img{ max-width:100%; display:block; }
   color:#1e5cff;
   font-weight: 800;
 }
+
 .split-media img{
   border-radius: 18px;
   box-shadow: var(--shadow);
@@ -563,13 +633,14 @@ img{ max-width:100%; display:block; }
   object-fit: cover;
 }
 
-/* ---------- What to Expect ---------- */
+/* What to Expect */
 .expect-grid{
   margin-top: 34px;
   display:grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 }
+
 .expect-card{
   background: white;
   border: 1px solid var(--border);
@@ -578,6 +649,7 @@ img{ max-width:100%; display:block; }
   text-align:center;
   box-shadow: var(--shadow-soft);
 }
+
 .expect-icon{
   width: 40px;
   height: 40px;
@@ -587,11 +659,13 @@ img{ max-width:100%; display:block; }
   place-items:center;
   background: rgba(47,139,255,.12);
 }
+
 .expect-card h4{
   margin: 0 0 8px;
   font-size: 14px;
   font-weight: 700;
 }
+
 .expect-card p{
   margin: 0;
   color: var(--muted);
@@ -599,7 +673,7 @@ img{ max-width:100%; display:block; }
   line-height: 1.55;
 }
 
-/* ---------- Foundations + Gradient Callout ---------- */
+/* Foundations */
 .foundation-grid{
   margin-top: 34px;
   display:grid;
@@ -609,6 +683,7 @@ img{ max-width:100%; display:block; }
   margin-left:auto;
   margin-right:auto;
 }
+
 .foundation{
   background: white;
   border: 1px solid var(--border);
@@ -619,6 +694,7 @@ img{ max-width:100%; display:block; }
   align-items:flex-start;
   box-shadow: var(--shadow-soft);
 }
+
 .foundation-badge{
   width: 34px;
   height: 34px;
@@ -627,18 +703,22 @@ img{ max-width:100%; display:block; }
   place-items:center;
   background: rgba(47,139,255,.14);
 }
+
 .foundation-badge.green{ background: rgba(34,197,94,.14); }
+
 .foundation h4{
   margin: 0 0 6px;
   font-size: 13px;
   font-weight: 700;
 }
+
 .foundation p{
   margin: 0;
   color: var(--muted);
   font-size: 12px;
   line-height: 1.55;
 }
+
 .gradient-card{
   margin-top: 26px;
   background: linear-gradient(135deg, #2f8bff, #9333ea);
@@ -648,12 +728,14 @@ img{ max-width:100%; display:block; }
   text-align:center;
   box-shadow: var(--shadow);
 }
+
 .gradient-card h3{
   margin: 0;
   font-size: 18px;
   font-weight: 800;
   letter-spacing: -0.02em;
 }
+
 .gradient-card p{
   margin: 12px auto 0;
   max-width: 760px;
@@ -661,6 +743,7 @@ img{ max-width:100%; display:block; }
   font-size: 12.5px;
   line-height: 1.65;
 }
+
 .chips{
   margin-top: 16px;
   display:flex;
@@ -668,6 +751,7 @@ img{ max-width:100%; display:block; }
   justify-content:center;
   flex-wrap:wrap;
 }
+
 .chip{
   padding: 8px 12px;
   border-radius: 999px;
@@ -677,7 +761,7 @@ img{ max-width:100%; display:block; }
   font-weight: 600;
 }
 
-/* ---------- Episodes ---------- */
+/* Episodes */
 .episode-list{
   margin-top: 34px;
   display:grid;
@@ -686,6 +770,7 @@ img{ max-width:100%; display:block; }
   margin-left: auto;
   margin-right: auto;
 }
+
 .episode{
   background: #f1f6ff;
   border: 1px solid rgba(47,139,255,.15);
@@ -695,6 +780,7 @@ img{ max-width:100%; display:block; }
   gap: 14px;
   align-items:flex-start;
 }
+
 .episode-ic{
   width: 38px;
   height: 38px;
@@ -706,12 +792,14 @@ img{ max-width:100%; display:block; }
   font-size: 16px;
   flex: 0 0 auto;
 }
+
 .episode-meta{
   display:flex;
   align-items:center;
   gap: 10px;
   margin-bottom: 8px;
 }
+
 .episode-pill{
   font-size: 11px;
   font-weight: 700;
@@ -721,23 +809,27 @@ img{ max-width:100%; display:block; }
   padding: 6px 10px;
   border-radius: 999px;
 }
+
 .episode-title{
   margin: 0 0 8px;
   font-size: 15px;
   letter-spacing: -0.01em;
 }
+
 .episode-desc{
   margin: 0;
   color: #4b5563;
   font-size: 12.5px;
   line-height: 1.65;
 }
+
 .episode-tags{
   margin-top: 12px;
   display:flex;
   gap: 10px;
   flex-wrap: wrap;
 }
+
 .tag{
   font-size: 11px;
   color: #6b7280;
@@ -747,11 +839,12 @@ img{ max-width:100%; display:block; }
   border-radius: 999px;
 }
 
-/* ---------- Waitlist Section ---------- */
+/* Waitlist */
 .waitlist-section{
   background: linear-gradient(135deg, #2f8bff, #9333ea);
   padding: 90px 0 0;
 }
+
 .waitlist-card{
   background: white;
   border-radius: 22px;
@@ -760,17 +853,21 @@ img{ max-width:100%; display:block; }
   margin: 28px auto 0;
   box-shadow: var(--shadow);
 }
+
 .waitlist-form{
   display:grid;
   gap: 16px;
 }
+
 .field label, .field legend{
   font-size: 13px;
   font-weight: 600;
   display:block;
   margin-bottom: 6px;
 }
+
 .req{ color:#e11d48; }
+
 .field input, .field textarea{
   width: 100%;
   padding: 12px 12px;
@@ -780,15 +877,18 @@ img{ max-width:100%; display:block; }
   font-size: 14px;
   font-family: inherit;
 }
+
 .field input:focus, .field textarea:focus{
   border-color: rgba(47,139,255,.6);
   box-shadow: 0 0 0 4px rgba(47,139,255,.18);
 }
+
 fieldset{
   border: none;
   padding: 0;
   margin: 0;
 }
+
 .radio{
   display:flex;
   gap: 10px;
@@ -797,39 +897,46 @@ fieldset{
   color: #2b3445;
   margin-top: 8px;
 }
+
 .mt10{ margin-top: 10px; }
+
 .form-status{
   margin: 0;
   color: #0b0f1a;
 }
 
-/* ---------- Footer ---------- */
+/* Footer */
 .footer{
   margin-top: 60px;
   padding: 44px 0 24px;
 }
+
 .footer-dark{
   color: rgba(255,255,255,.92);
   background: #0b0f1a;
   border-top-left-radius: 22px;
   border-top-right-radius: 22px;
 }
+
 .footer-grid{
   display:grid;
   grid-template-columns: 1.2fr 1fr 1fr;
   gap: 28px;
   padding: 28px 0 18px;
 }
+
 .footer h5{
   margin: 0 0 10px;
   font-size: 14px;
 }
+
 .footer p, .footer li{
   margin: 0;
   font-size: 12.5px;
   line-height: 1.6;
   color: rgba(255,255,255,.75);
 }
+
 .footer ul{
   list-style:none;
   padding:0;
@@ -837,21 +944,24 @@ fieldset{
   display:grid;
   gap: 6px;
 }
+
 .footer a{
   color: rgba(255,255,255,.9);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
 .footer-bottom{
   border-top: 1px solid rgba(255,255,255,.08);
   text-align:center;
   padding: 16px 20px;
 }
+
 .footer-bottom p{
   color: rgba(255,255,255,.65);
 }
 
-/* ---------- Responsive ---------- */
+/* Responsive */
 @media (max-width: 980px){
   .nav-links{ display:none; }
   .hero-grid{ grid-template-columns: 1fr; }
