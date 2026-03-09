@@ -1,10 +1,8 @@
-// Footer year
 const yearEl = document.getElementById("year");
-if (yearEl) yearEl.textContent = new Date().getFullYear();
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
 
-// Waitlist form (demo)
-// Note: This does NOT save anywhere yet (GitHub Pages is static).
-// Later you can connect it to Google Forms / Mailchimp / ConvertKit.
 const form = document.getElementById("waitlist-form");
 const statusEl = document.getElementById("form-status");
 
@@ -23,15 +21,12 @@ if (form && statusEl) {
     }
 
     if (!role) {
-      statusEl.textContent = "Please select what best describes you (Parent / Teacher / Admin / Other).";
+      statusEl.textContent = "Please select what best describes you.";
       return;
     }
 
     statusEl.textContent = `Thanks, ${name}! You're on the waitlist (${role}).`;
-
-    // Helpful for testing
     console.log({ name, email, role, concerns });
-
     form.reset();
   });
 }
