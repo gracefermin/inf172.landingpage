@@ -10,8 +10,8 @@ if (form && statusEl) {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const name = document.getElementById("name")?.value.trim();
-    const email = document.getElementById("email")?.value.trim();
+    const name = document.getElementById("name")?.value.trim() || "";
+    const email = document.getElementById("email")?.value.trim() || "";
     const role = form.querySelector('input[name="role"]:checked')?.value || "";
     const concerns = document.getElementById("concerns")?.value.trim() || "";
 
