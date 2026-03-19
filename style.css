@@ -823,6 +823,7 @@ img{ max-width:100%; display:block; }
   background: linear-gradient(135deg, #2f5fff 0%, #9333ea 50%, #2f5fff 100%);
   padding: 88px 0 0;
   margin-top: 0;
+  
 }
 
 .waitlist-card{
@@ -832,6 +833,14 @@ img{ max-width:100%; display:block; }
   max-width: 760px;
   margin: 30px auto 0;
   box-shadow: 0 18px 40px rgba(0,0,0,.12);
+}
+
+.waitlist-section h2{
+  color: #ffffff;
+}
+
+.waitlist-section .section-subtitle{
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .waitlist-form{
